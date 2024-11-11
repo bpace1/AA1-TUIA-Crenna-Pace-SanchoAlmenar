@@ -7,4 +7,5 @@ scikit-learn
 scipy
 imblearn
 ipykernel
+auto-sklearn
 nbformat
