@@ -1,3 +1,4 @@
 house-prices-tp.csv
 *.venv
 *.venv_PDI
+*.log
