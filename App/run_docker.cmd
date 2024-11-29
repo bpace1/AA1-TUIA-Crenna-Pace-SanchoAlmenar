@@ -1,1 +1,1 @@
-docker run -p 8000:8000 app-climate
+docker run -d -p 8501:8501 --restart always app-climate 

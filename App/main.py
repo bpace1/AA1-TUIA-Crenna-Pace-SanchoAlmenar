@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import requests
+import io
 
 API_URL = "http://localhost:8080"
 
@@ -28,7 +29,7 @@ if uploaded_file is not None:
     if st.button("Realizar predicción"):
         try:
             files = {"file": ("uploaded_file.csv", uploaded_file.getvalue())}
-            
+
             if model_type == "Logistic Regression":
                 endpoint = "/predict/logistic_regression"
             else:
@@ -38,8 +39,22 @@ if uploaded_file is not None:
             
             if response.status_code == 200:
                 predictions = response.json()["predictions"]
-                st.write("Predicciones:")
-                st.write(predictions)
+                
+                df["Prediccion"] = predictions
+                
+                st.write("Datos con predicciones:")
+                st.write(df.head())
+
+                csv_buffer = io.StringIO()
+                df.to_csv(csv_buffer, index=False)
+                csv_data = csv_buffer.getvalue()
+
+                st.download_button(
+                    label="Descargar CSV con predicciones",
+                    data=csv_data,
+                    file_name="predicciones.csv",
+                    mime="text/csv"
+                )
             else:
                 st.error(f"Error: {response.json()['detail']}")
         except Exception as e:
