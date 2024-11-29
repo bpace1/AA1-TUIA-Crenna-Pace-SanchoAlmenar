@@ -41,7 +41,9 @@ if uploaded_file is not None:
                 predictions = response.json()["predictions"]
                 
                 df["Prediccion"] = predictions
-                
+
+                df = df[["Prediccion"]]
+                                
                 st.write("Datos con predicciones:")
                 st.write(df.head())
 
