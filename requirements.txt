@@ -10,3 +10,4 @@ ipykernel
 nbformat
 pycaret
 shap
+optuna
