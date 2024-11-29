@@ -1,0 +1,7 @@
+Date,Location,MinTemp,MaxTemp,Rainfall,Evaporation,Sunshine,WindGustDir,WindGustSpeed,WindDir9am,WindDir3pm,WindSpeed9am,WindSpeed3pm,Humidity9am,Humidity3pm,Pressure9am,Pressure3pm,Cloud9am,Cloud3pm,Temp9am,Temp3pm,RainToday
+2012-04-25,AliceSprings,7.3,19.1,0,3.6,11,SSE,50,SE,SSE,19,24,52,28,1022.9,1019.5,0,0,13.2,18.5,No
+2012-04-26,AliceSprings,4.4,20.6,0,5.2,11,E,33,ENE,ESE,6,15,61,30,1022.3,1018.9,0,0,12.7,19.9,No
+2012-04-27,AliceSprings,5.9,21.7,0,4,10.8,SE,39,SE,ESE,11,17,63,31,1021.8,1018.4,0,1,14.4,20.7,No
+2012-04-28,AliceSprings,6.3,22.2,0,4.8,10.7,ESE,44,NE,ESE,2,22,61,31,1020.6,1017.2,0,1,14.5,21.3,No
+2012-04-29,AliceSprings,5.7,22.9,0,5,10,ESE,46,E,E,13,20,58,27,1020,1016,5,2,14.9,21.9,No
+2012-04-30,AliceSprings,7.3,25.6,0,5.6,10.8,SE,24,WSW,SW,6,9,57,29,1017.9,1013.3,0,1,16.4,24.9,No
