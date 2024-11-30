@@ -44,7 +44,7 @@ cd AA1-TUIA-Crenna-Pace-SanchoAlmenar
 ```
 
 
-#### En linux:
+### En linux:
 
 2. En terminal ejecutar:
 
@@ -57,27 +57,37 @@ cd AA1-TUIA-Crenna-Pace-SanchoAlmenar
 
 3. Abrir los notebooks y ejecutar los códigos.
 
-4. Para ejecutar el docker con el archivo inferencia.py mediante la api, volver a la raíz del proyecto y ejecutar:
+4. Para ejecutar el docker con el archivo inferencia.py mediante la api y el dashboard, volver a la raíz del proyecto y ejecutar:
+
+### En windows:
 
 ```sh
-  cd Docker
-  docker build -t fastapi-models .
-  docker run -d -p 8000:8000 --restart always fastapi-models
+  deploy.cmd
 ```
 
-5. Para ejecutar el dashboard, volver a la raíz del proyecto y ejecutar:
+### En linux:
 
 ```sh
-  cd App
-  docker build -t app-climate .
-  docker run -d -p 8501:8501 --restart always app-climate 
-```
+  sudo bash deploy.sh
+ ```
 
-Ingresar a la aplicación en [Dashboard app](http://localhost:8501/)
 
-Si desea probar la api, ingrese en [API swagger](http://localhost:8000/docs)
+Ingresar a la aplicación en [Dashboard App](http://localhost:8501/)
+
+Si desea probar la api, ingrese en [API Swagger](http://localhost:8000/docs)
 
 Tenemos un dashboard con el modelo corriendo en [Dashboard en línea](https://clima.terralytics.com.ar/)
 
+En caso de querer eliminar la imagen de la api y el dashboard, ejecutar:
 
-  
+### En windows:
+
+```sh
+  clean_docker.cmd
+```
+
+### En linux:
+
+```sh
+  sudo bash clean_docker.sh
+ ```

@@ -4,6 +4,8 @@ cd Docker
 
 docker build -t api-clima .
 
+docker network create clima-network
+
 docker run -d -p 8000:8000 --network clima-network --name  api-clima --restart always  api-clima
 
 cd ..
