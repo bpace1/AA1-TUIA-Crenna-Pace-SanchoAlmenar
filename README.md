@@ -74,13 +74,11 @@ cd AA1-TUIA-Crenna-Pace-SanchoAlmenar
   streamlit run main.py --server.port=8501 --server.address=0.0.0.0
 ```
 
-ingresar a la aplicación en [Dashboard app](http://localhost:8501/)
+Ingresar a la aplicación en [Dashboard app](http://localhost:8501/)
 
-si desea probar la api, ingrese en [API swagger](http://localhost:8000/docs)
+Si desea probar la api, ingrese en [API swagger](http://localhost:8000/docs)
 
-Tenemos un dashboard con el modelo corriendo en:
-
-[Dashboard en línea](https://clima.terralytics.com.ar/)
+Tenemos un dashboard con el modelo corriendo en [Dashboard en línea](https://clima.terralytics.com.ar/)
 
 
   
