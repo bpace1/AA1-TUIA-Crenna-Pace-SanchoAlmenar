@@ -71,7 +71,6 @@ cd AA1-TUIA-Crenna-Pace-SanchoAlmenar
   cd App
   docker build -t app-climate .
   docker run -d -p 8501:8501 --restart always app-climate 
-  streamlit run main.py --server.port=8501 --server.address=0.0.0.0
 ```
 
 Ingresar a la aplicación en [Dashboard app](http://localhost:8501/)
