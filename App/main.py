@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import io
 
-API_URL = "http://localhost:8000"
+API_URL = "http://api-clima:8000"
 
 st.set_page_config(page_title="Predictor Clima",
                    page_icon=':mostly_sunny:')

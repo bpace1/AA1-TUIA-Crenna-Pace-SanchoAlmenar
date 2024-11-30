@@ -1,6 +1,5 @@
 import pandas as pd
 import pickle
-import tensorflow as tf
 import numpy as np
 import math
 from fastapi import FastAPI, UploadFile, HTTPException
