@@ -8,8 +8,18 @@
 
 ### Descripción:
 
+Trabajos prácticos de aprendizaje automático 1. Se abordan los siguientes temas:
+- Pre-procesado de datos.
+- Modelos de regresión lineal.
+- Modelos de regresión logística.
+- Redes Neuronales.
+- Exportado de modelo y entorno en Docker para la puesta en producción.
+- Creación de API con FAStAPI.
+- Dashboard en streamlit.
+
 ### Pre-requisitos:
-- python 3.10
+- Python 3.10.
+- Docker.
 
 
 ### Ejecución:
@@ -46,3 +56,31 @@ cd AA1-TUIA-Crenna-Pace-SanchoAlmenar
 
 
 3. Abrir los notebooks y ejecutar los códigos.
+
+4. Para ejecutar el docker con el archivo inferencia.py mediante la api, volver a la raíz del proyecto y ejecutar:
+
+```sh
+  cd Docker
+  docker build -t fastapi-models .
+  docker run -d -p 8000:8000 --restart always fastapi-models
+```
+
+5. Para ejecutar el dashboard, volver a la raíz del proyecto y ejecutar:
+
+```sh
+  cd App
+  docker build -t app-climate .
+  docker run -d -p 8501:8501 --restart always app-climate 
+  streamlit run main.py --server.port=8501 --server.address=0.0.0.0
+```
+
+ingresar a la aplicación en [Dashboard app](http://localhost:8501/)
+
+si desea probar la api, ingrese en [API swagger](http://localhost:8000/docs)
+
+Tenemos un dashboard con el modelo corriendo en:
+
+[Dashboard en línea](https://clima.terralytics.com.ar/)
+
+
+  

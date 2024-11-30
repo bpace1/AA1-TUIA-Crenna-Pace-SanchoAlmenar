@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import io
 
-API_URL = "http://localhost:8080"
+API_URL = "http://localhost:8000"
 
 st.set_page_config(page_title="Predictor Clima",
                    page_icon=':mostly_sunny:')
@@ -35,7 +35,8 @@ if uploaded_file is not None:
             else:
                 endpoint = "/predict/nn"
             
-            response = requests.post(f"{API_URL}{endpoint}", files=files)
+
+            response = requests.post(f'{API_URL}{endpoint}', files=files)
             
             if response.status_code == 200:
                 predictions = response.json()["predictions"]
