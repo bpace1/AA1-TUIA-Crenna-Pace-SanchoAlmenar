@@ -1,16 +1,23 @@
 ## Trabajos Prácticos: Aprendizaje Automático 1.
 ### Tec. Universitaria en Inteligencia Artificial - FCEIA (UNR)
 
+Trabajo de regresión: estimador de precios de casas.
+
+Trabajo de clasificación: estimador de días lluviosos de 10 ciudades.
+
+
 ### Alumnos: 
-- Crenna, Giuliano. Legajo: C-7438/1.
-- Pace, Bruno Emmanuel. Legajo: P-5295/7.
-- Sancho Almenar, Mariano. Legajo: S-5778/9.
+- Crenna, Giuliano. 
+- Pace, Bruno Emmanuel. 
+- Sancho Almenar, Mariano.
 
 ### Descripción:
 
 Trabajos prácticos de aprendizaje automático 1. Se abordan los siguientes temas:
 - Pre-procesado de datos.
 - Modelos de regresión lineal.
+- Modelos Lasso, Ridge y Elastic Net.
+- Gradiente Descendiente, Batch y mini-batch.
 - Modelos de regresión logística.
 - Redes Neuronales.
 - Exportado de modelo y entorno en Docker para la puesta en producción.
